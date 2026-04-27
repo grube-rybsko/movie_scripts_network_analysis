@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
+<graph edgedefault="undirected"><node id="GAIL"/>
+<node id="FATHER"/>
+<node id="TOMMY"/>
+<node id="RENTON"/>
+<node id="MOTHER"/>
+<node id="SPUD"/>
+<node id="LIZZY"/>
+<node id="MAN 2"/>
+<node id="DIANE"/>
+<node id="MAN 1"/>
+<node id="SPUID"/>
+<node id="ALLISON"/>
+<node id="TAXI DRIVER"/>
+<node id="SWANNEY"/>
+<node id="MIKEY"/>
+<node id="WOMAN"/>
+<node id="GAV"/>
+<node id="ANDREAS"/>
+<node id="MAN"/>
+<node id="DOCTOR"/>
+<node id="BEGBIE"/>
+<node id="SHERIFF"/>
+<node id="SICK BOY"/>
+<edge source="GAIL" target="SPUD">
+  <data key="d0">8</data>
+</edge>
+<edge source="GAIL" target="TOMMY">
+  <data key="d0">5</data>
+</edge>
+<edge source="GAIL" target="LIZZY">
+  <data key="d0">4</data>
+</edge>
+<edge source="GAIL" target="BEGBIE">
+  <data key="d0">3</data>
+</edge>
+<edge source="GAIL" target="RENTON">
+  <data key="d0">3</data>
+</edge>
+<edge source="GAIL" target="SICK BOY">
+  <data key="d0">3</data>
+</edge>
+<edge source="GAIL" target="ALLISON">
+  <data key="d0">1</data>
+</edge>
+<edge source="GAIL" target="DIANE">
+  <data key="d0">1</data>
+</edge>
+<edge source="GAIL" target="MAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="GAIL" target="SPUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="GAIL" target="FATHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="GAIL" target="MOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="FATHER" target="RENTON">
+  <data key="d0">14</data>
+</edge>
+<edge source="FATHER" target="MOTHER">
+  <data key="d0">13</data>
+</edge>
+<edge source="FATHER" target="SPUD">
+  <data key="d0">5</data>
+</edge>
+<edge source="FATHER" target="SICK BOY">
+  <data key="d0">4</data>
+</edge>
+<edge source="FATHER" target="BEGBIE">
+  <data key="d0">3</data>
+</edge>
+<edge source="FATHER" target="SHERIFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="FATHER" target="GAV">
+  <data key="d0">1</data>
+</edge>
+<edge source="FATHER" target="DIANE">
+  <data key="d0">1</data>
+</edge>
+<edge source="FATHER" target="TOMMY">
+  <data key="d0">1</data>
+</edge>
+<edge source="FATHER" target="DOCTOR">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOMMY" target="RENTON">
+  <data key="d0">26</data>
+</edge>
+<edge source="TOMMY" target="SICK BOY">
+  <data key="d0">18</data>
+</edge>
+<edge source="TOMMY" target="SPUD">
+  <data key="d0">17</data>
+</edge>
+<edge source="TOMMY" target="BEGBIE">
+  <data key="d0">15</data>
+</edge>
+<edge source="TOMMY" target="LIZZY">
+  <data key="d0">15</data>
+</edge>
+<edge source="TOMMY" target="MAN">
+  <data key="d0">4</data>
+</edge>
+<edge source="TOMMY" target="DIANE">
+  <data key="d0">4</data>
+</edge>
+<edge source="TOMMY" target="GAV">
+  <data key="d0">4</data>
+</edge>
+<edge source="TOMMY" target="SWANNEY">
+  <data key="d0">3</data>
+</edge>
+<edge source="TOMMY" target="ALLISON">
+  <data key="d0">2</data>
+</edge>
+<edge source="TOMMY" target="SPUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOMMY" target="MOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOMMY" target="MIKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="RENTON" target="SICK BOY">
+  <data key="d0">44</data>
+</edge>
+<edge source="RENTON" target="BEGBIE">
+  <data key="d0">39</data>
+</edge>
+<edge source="RENTON" target="SPUD">
+  <data key="d0">37</data>
+</edge>
+<edge source="RENTON" target="MOTHER">
+  <data key="d0">16</data>
+</edge>
+<edge source="RENTON" target="DIANE">
+  <data key="d0">16</data>
+</edge>
+<edge source="RENTON" target="SWANNEY">
+  <data key="d0">15</data>
+</edge>
+<edge source="RENTON" target="MAN">
+  <data key="d0">11</data>
+</edge>
+<edge source="RENTON" target="LIZZY">
+  <data key="d0">8</data>
+</edge>
+<edge source="RENTON" target="ALLISON">
+  <data key="d0">6</data>
+</edge>
+<edge source="RENTON" target="WOMAN">
+  <data key="d0">6</data>
+</edge>
+<edge source="RENTON" target="GAV">
+  <data key="d0">5</data>
+</edge>
+<edge source="RENTON" target="MIKEY">
+  <data key="d0">4</data>
+</edge>
+<edge source="RENTON" target="DOCTOR">
+  <data key="d0">4</data>
+</edge>
+<edge source="RENTON" target="MAN 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="RENTON" target="MAN 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="RENTON" target="SPUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="RENTON" target="TAXI DRIVER">
+  <data key="d0">1</data>
+</edge>
+<edge source="RENTON" target="SHERIFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="RENTON" target="ANDREAS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="SPUD">
+  <data key="d0">6</data>
+</edge>
+<edge source="MOTHER" target="SICK BOY">
+  <data key="d0">4</data>
+</edge>
+<edge source="MOTHER" target="BEGBIE">
+  <data key="d0">3</data>
+</edge>
+<edge source="MOTHER" target="ALLISON">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="SWANNEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="SHERIFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="GAV">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="DIANE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="DOCTOR">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUD" target="SICK BOY">
+  <data key="d0">34</data>
+</edge>
+<edge source="SPUD" target="BEGBIE">
+  <data key="d0">20</data>
+</edge>
+<edge source="SPUD" target="ALLISON">
+  <data key="d0">7</data>
+</edge>
+<edge source="SPUD" target="SWANNEY">
+  <data key="d0">7</data>
+</edge>
+<edge source="SPUD" target="LIZZY">
+  <data key="d0">5</data>
+</edge>
+<edge source="SPUD" target="MAN">
+  <data key="d0">4</data>
+</edge>
+<edge source="SPUD" target="DIANE">
+  <data key="d0">4</data>
+</edge>
+<edge source="SPUD" target="GAV">
+  <data key="d0">3</data>
+</edge>
+<edge source="SPUD" target="MIKEY">
+  <data key="d0">2</data>
+</edge>
+<edge source="SPUD" target="MAN 1">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUD" target="MAN 2">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUD" target="WOMAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUD" target="SPUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUD" target="SHERIFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="LIZZY" target="SICK BOY">
+  <data key="d0">6</data>
+</edge>
+<edge source="LIZZY" target="BEGBIE">
+  <data key="d0">4</data>
+</edge>
+<edge source="LIZZY" target="ALLISON">
+  <data key="d0">1</data>
+</edge>
+<edge source="LIZZY" target="DIANE">
+  <data key="d0">1</data>
+</edge>
+<edge source="LIZZY" target="MAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="LIZZY" target="SPUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="LIZZY" target="GAV">
+  <data key="d0">1</data>
+</edge>
+<edge source="MAN 2" target="MAN">
+  <data key="d0">2</data>
+</edge>
+<edge source="MAN 2" target="MAN 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="MAN 2" target="WOMAN">
+  <data key="d0">2</data>
+</edge>
+<edge source="MAN 2" target="BEGBIE">
+  <data key="d0">1</data>
+</edge>
+<edge source="DIANE" target="SICK BOY">
+  <data key="d0">6</data>
+</edge>
+<edge source="DIANE" target="BEGBIE">
+  <data key="d0">4</data>
+</edge>
+<edge source="DIANE" target="MAN">
+  <data key="d0">2</data>
+</edge>
+<edge source="DIANE" target="WOMAN">
+  <data key="d0">2</data>
+</edge>
+<edge source="DIANE" target="SPUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="DIANE" target="TAXI DRIVER">
+  <data key="d0">1</data>
+</edge>
+<edge source="MAN 1" target="MAN">
+  <data key="d0">2</data>
+</edge>
+<edge source="MAN 1" target="WOMAN">
+  <data key="d0">2</data>
+</edge>
+<edge source="MAN 1" target="BEGBIE">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUID" target="BEGBIE">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUID" target="MAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="SPUID" target="SICK BOY">
+  <data key="d0">1</data>
+</edge>
+<edge source="ALLISON" target="SICK BOY">
+  <data key="d0">7</data>
+</edge>
+<edge source="ALLISON" target="SWANNEY">
+  <data key="d0">6</data>
+</edge>
+<edge source="ALLISON" target="BEGBIE">
+  <data key="d0">1</data>
+</edge>
+<edge source="SWANNEY" target="SICK BOY">
+  <data key="d0">8</data>
+</edge>
+<edge source="SWANNEY" target="BEGBIE">
+  <data key="d0">2</data>
+</edge>
+<edge source="SWANNEY" target="MIKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MIKEY" target="BEGBIE">
+  <data key="d0">2</data>
+</edge>
+<edge source="MIKEY" target="SICK BOY">
+  <data key="d0">2</data>
+</edge>
+<edge source="WOMAN" target="BEGBIE">
+  <data key="d0">5</data>
+</edge>
+<edge source="WOMAN" target="MAN">
+  <data key="d0">4</data>
+</edge>
+<edge source="WOMAN" target="SICK BOY">
+  <data key="d0">1</data>
+</edge>
+<edge source="GAV" target="BEGBIE">
+  <data key="d0">3</data>
+</edge>
+<edge source="GAV" target="SICK BOY">
+  <data key="d0">3</data>
+</edge>
+<edge source="ANDREAS" target="BEGBIE">
+  <data key="d0">2</data>
+</edge>
+<edge source="ANDREAS" target="MAN">
+  <data key="d0">2</data>
+</edge>
+<edge source="ANDREAS" target="SICK BOY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MAN" target="BEGBIE">
+  <data key="d0">10</data>
+</edge>
+<edge source="MAN" target="SICK BOY">
+  <data key="d0">5</data>
+</edge>
+<edge source="BEGBIE" target="SICK BOY">
+  <data key="d0">26</data>
+</edge>
+<edge source="BEGBIE" target="SHERIFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="SHERIFF" target="SICK BOY">
+  <data key="d0">1</data>
+</edge>
+</graph></graphml>
