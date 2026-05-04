@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAINSPOTTING // Network Analysis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+    <style>
+        /* Estetyka "Heroin Chic" i Punk lat 90. */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #eeeeee;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+        }
+
+        /* Overlay z teksturą ziarna */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        #ui-layer {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            max-width: 300px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-left: 5px solid #ff4500;
+        }
+
+        h1 {
+            color: #ff4500;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin: 0 0 10px 0;
+            background: #ff4500;
+            color: #000;
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .stats {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #888;
+        }
+
+        #cy {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 10px;
+            color: #444;
+            text-align: right;
+        }
+
+        /* Stylizacja scrollbaru dla klimatu retro */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #ff4500; }
+    </style>
+</head>
+<body>
+
+<div id="ui-layer">
+    <h1>Choose Life.</h1>
+    <p class="stats">
+        <strong>DATASET:</strong> Leith-Edinburgh Network<br>
+        <strong>NODES:</strong> Character Centrality<br>
+        <strong>EDGES:</strong> Shared Scenes / Toxicity
+    </p>
+    <div id="details" style="margin-top: 20px; color: #ff4500;">
+        Kliknij węzeł, aby przeanalizować relację...
+    </div>
+</div>
+
+<div id="cy"></div>
+
+<div class="legend">
+    [ANALIZA SIECI SPOŁECZNEJ: TRAINSPOTTING 1996]<br>
+    POWERED BY CYTOSCAPE.JS & RAW DATA
+</div>
+
+<script>
+    // Inicjalizacja grafu
+    var cy = cytoscape({
+        container: document.getElementById('cy'),
+
+        elements: [
+            // WĘZŁY (Podmień na swoje dane z GEXF)
+            { data: { id: 'renton', label: 'RENTON', weight: 100, type: 'core' } },
+            { data: { id: 'sickboy', label: 'SICK BOY', weight: 80, type: 'core' } },
+            { data: { id: 'spud', label: 'SPUD', weight: 70, type: 'core' } },
+            { data: { id: 'begbie', label: 'BEGBIE', weight: 90, type: 'danger' } },
+            { data: { id: 'tommy', label: 'TOMMY', weight: 50, type: 'victim' } },
+            { data: { id: 'diane', label: 'DIANE', weight: 40, type: 'outside' } },
+            { data: { id: 'mother', label: 'MOTHER SUPERIOR', weight: 60, type: 'dealer' } },
+
+            // KRAWĘDZIE (Relacje)
+            { data: { source: 'renton', target: 'sickboy', strength: 5 } },
+            { data: { source: 'renton', target: 'spud', strength: 4 } },
+            { data: { source: 'renton', target: 'begbie', strength: 8 } },
+            { data: { source: 'renton', target: 'tommy', strength: 3 } },
+            { data: { source: 'sickboy', target: 'begbie', strength: 4 } },
+            { data: { source: 'spud', target: 'begbie', strength: 2 } },
+            { data: { source: 'renton', target: 'mother', strength: 10 } },
+            { data: { source: 'renton', target: 'diane', strength: 5 } }
+        ],
+
+        style: [
+            {
+                selector: 'node',
+                style: {
+                    'background-color': '#fff',
+                    'label': 'data(label)',
+                    'color': '#fff',
+                    'font-family': 'Courier New',
+                    'font-size': '12px',
+                    'text-valign': 'center',
+                    'text-halign': 'right',
+                    'text-margin-x': '10px',
+                    'width': 'mapData(weight, 40, 100, 20, 60)',
+                    'height': 'mapData(weight, 40, 100, 20, 60)',
+                    'border-width': 2,
+                    'border-color': '#ff4500'
+                }
+            },
+            {
+                selector: 'node[type="danger"]',
+                style: {
+                    'background-color': '#ff0000',
+                    'shape': 'rectangle'
+                }
+            },
+            {
+                selector: 'node[type="victim"]',
+                style: {
+                    'opacity': 0.6,
+                    'background-color': '#888'
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    'width': 'data(strength)',
+                    'line-color': '#333',
+                    'curve-style': 'bezier',
+                    'opacity': 0.5
+                }
+            },
+            {
+                selector: ':selected',
+                style: {
+                    'background-color': '#ff4500',
+                    'line-color': '#ff4500',
+                    'transition-property': 'background-color, line-color',
+                    'transition-duration': '0.3s'
+                }
+            }
+        ],
+
+        layout: {
+            name: 'cose', // Layout symulujący fizykę
+            animate: true,
+            nodeRepulsion: 4000,
+            padding: 50
+        }
+    });
+
+    // Interakcja - kliknięcie w węzeł
+    cy.on('tap', 'node', function(evt){
+        var node = evt.target;
+        document.getElementById('details').innerHTML = `
+            <strong>POSTAĆ:</strong> ${node.data('label')}<br>
+            <strong>POŁĄCZENIA:</strong> ${node.degree()}<br>
+            <strong>STATUS:</strong> ${node.data('type').toUpperCase()}
+        `;
+    });
+
+    // Reset po kliknięciu w tło
+    cy.on('tap', function(event){
+        if( event.target === cy ){
+            document.getElementById('details').innerText = "Kliknij węzeł, aby przeanalizować relację...";
+        }
+    });
+</script>
+
+</body>
+</html>
